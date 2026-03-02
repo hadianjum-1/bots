@@ -1,0 +1,10 @@
+﻿{
+    "message":  "Client registered successfully! Save your API key - it will only be shown once.",
+    "client":  {
+                   "clientId":  "cafe-express-2024",
+                   "businessName":  "Cafe Express",
+                   "businessEmail":  "hello@cafeexpress.com",
+                   "apiKey":  "13fa6653527de53720c2fb3fc7c0c6d7c6e0d52c472d97de98f435abdb7bf736",
+                   "createdAt":  "2026-03-02T11:33:22.782Z"
+               }
+}

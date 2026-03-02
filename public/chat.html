@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="http://localhost:3000/api/chat.css" />
+    <!-- <link rel="stylesheet" href="chat.css" /> -->
+  </head>
+  <body >
+    <div class="ngb-chat-button"><i class="fa-brands fa-rocketchat"></i></div>
+
+    <div class="ngb-chat-box">
+      <!-- Header -->
+      <div class="ngb-header">
+        <div class="ngb-header-left">
+          <img src="https://i.pravatar.cc/40" class="ngb-avatar" />
+          <div>
+            <div class="ngb-title">AI Assistant</div>
+            <div class="ngb-status">Online • Replies instantly</div>
+          </div>
+        </div>
+
+        <div class="ngb-header-actions">
+          <button class="ngb-dark-toggle"><i class="fa-solid fa-moon"></i></button>
+          <span class="ngb-close"><i class="fa-brands fa-mixer"></i></span>
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <div class="ngb-messages"></div>
+
+      <!-- Footer -->
+      <div class="ngb-footer">
+        <div class="up">
+          <input class="ngb-input" placeholder="Type your message..." />
+          <button class="ngb-send y"><i class="fa-solid fa-circle-arrow-up"></i></button>
+        </div>
+        <div class="Down">
+          <div class="cover">
+            <label class="ngb-attach ht"
+              ><i class="fa-solid fa-paperclip"></i>
+              <input type="file" hidden />
+            </label>
+
+            <button class="ngb-emoji ht">
+              <i class="fa-regular fa-face-laugh"></i>
+            </button>
+
+            <button class="ngb-lead ht">
+              <i class="fa-regular fa-rectangle-list"></i>
+            </button>
+          </div>
+
+          <div class="txt-1">
+            Powered by <span style="color: #4f8cff; font-weight: bold">NexGenByte</span>
+          </div>
+        </div>
+
+        <!-- lead collection button -->
+      </div>
+    </div>
+
+    <!-- Emoji Picker -->
+    <div class="ngb-emoji-picker">😀 😁 😂 😍 😎 😢 😡 👍 👎 🎉 🚀 ❤️</div>
+
+    <!-- Link JS (VERY IMPORTANT: pass clientId) -->
+    <script
+      src="http://localhost:3000/api/chat-client.js"
+      data-client="nexgenbyte"
+    ></script>
+    <!-- <script src="chat-client.js"></script>
+    <script src="widget.js"></script> -->
+  </body>
+</html>
