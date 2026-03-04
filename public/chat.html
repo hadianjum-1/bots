@@ -31,7 +31,7 @@
 
         <div class="ngb-header-actions">
           <button class="ngb-dark-toggle"><i class="fa-solid fa-moon"></i></button>
-          <span class="ngb-close"><i class="fa-brands fa-mixer"></i></span>
+          <span class="ngb-close"><i class="fa-solid fa-x"></i></span>
         </div>
       </div>
 
@@ -61,7 +61,7 @@
           </div>
 
           <div class="txt-1">
-            Powered by <span style="color: #4f8cff; font-weight: bold">NexGenByte</span>
+            Powered by <span style="color: #4f8cff; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">NexGenByte</span>
           </div>
         </div>
 
@@ -70,14 +70,18 @@
     </div>
 
     <!-- Emoji Picker -->
-    <div class="ngb-emoji-picker">😀 😁 😂 😍 😎 😢 😡 👍 👎 🎉 🚀 ❤️</div>
+    <div class="ngb-emoji-picker">
+      <span>😀</span><span>😁</span><span>😂</span><span>🤣</span><span>😊</span><span>😍</span>
+      <span>😎</span><span>🥰</span><span>😢</span><span>😭</span><span>😡</span><span>👍</span>
+      <span>👎</span><span>👏</span><span>🙌</span><span>💪</span><span>🎉</span><span>🚀</span>
+      <span>❤️</span><span>💔</span><span>💯</span><span>🔥</span><span>✨</span><span>⭐</span>
+      <span>🌟</span><span>💡</span><span>🎯</span><span>🏆</span><span>💻</span><span>📱</span>
+    </div>
 
-    <!-- Link JS (VERY IMPORTANT: pass clientId) -->
-    <script
+    <!-- Link JS (VERY IMPORTANT: pass API key) -->
+    <script 
       src="http://localhost:3000/api/chat-client.js"
-      data-client="nexgenbyte"
+     
     ></script>
-    <!-- <script src="chat-client.js"></script>
-    <script src="widget.js"></script> -->
   </body>
 </html>
