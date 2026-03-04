@@ -11,11 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="http://localhost:3000/api/chat.css" />
-    <!-- <link rel="stylesheet" href="chat.css" /> -->
+    <!-- Link CSS - Use relative path for both local and production -->
+    <link rel="stylesheet" href="/api/chat.css" />
   </head>
-  <body >
+  <body>
     <div class="ngb-chat-button"><i class="fa-brands fa-rocketchat"></i></div>
 
     <div class="ngb-chat-box">
@@ -26,14 +25,12 @@
           <div>
             <div class="ngb-title">AI Assistant</div>
             <div class="ngb-status">Online • Replies instantly</div>
-          </div>
         </div>
 
         <div class="ngb-header-actions">
           <button class="ngb-dark-toggle"><i class="fa-solid fa-moon"></i></button>
-          <span class="ngb-close"><i class="fa-solid fa-x"></i></span>
+          <span class="ngb-close"><i class="fa-brands fa-mixer"></i></span>
         </div>
-      </div>
 
       <!-- Messages -->
       <div class="ngb-messages"></div>
@@ -61,27 +58,14 @@
           </div>
 
           <div class="txt-1">
-            Powered by <span style="color: #4f8cff; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">NexGenByte</span>
+            Powered by <span style="color: #4f8cff; font-weight: bold">NexGenByte</span>
           </div>
-        </div>
-
-        <!-- lead collection button -->
       </div>
-    </div>
 
     <!-- Emoji Picker -->
-    <div class="ngb-emoji-picker">
-      <span>😀</span><span>😁</span><span>😂</span><span>🤣</span><span>😊</span><span>😍</span>
-      <span>😎</span><span>🥰</span><span>😢</span><span>😭</span><span>😡</span><span>👍</span>
-      <span>👎</span><span>👏</span><span>🙌</span><span>💪</span><span>🎉</span><span>🚀</span>
-      <span>❤️</span><span>💔</span><span>💯</span><span>🔥</span><span>✨</span><span>⭐</span>
-      <span>🌟</span><span>💡</span><span>🎯</span><span>🏆</span><span>💻</span><span>📱</span>
-    </div>
+    <div class="ngb-emoji-picker">😀 😁 😂 😍 😎 😢 😡 👍 👎 🎉 🚀 ❤️</div>
 
-    <!-- Link JS (VERY IMPORTANT: pass API key) -->
-    <script 
-      src="http://localhost:3000/api/chat-client.js"
-     
-    ></script>
+    <!-- Link JS - Use relative path, API key will be passed from widget.js -->
+    <script src="/api/chat-client.js" data-api-key="9b5c349906648a090f1deb8067e8dd9621da2020911272be0f197991599fe549"></script>
   </body>
 </html>

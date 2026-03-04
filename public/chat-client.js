@@ -1,7 +1,7 @@
 (function() {
   // Get API key from script tag
   var apiKey = document.currentScript.getAttribute('data-apiKey') || document.currentScript.dataset.apiKey;
-  var API = document.currentScript.getAttribute('data-baseUrl') || "http://localhost:3000/api";
+var API = document.currentScript.getAttribute('data-baseUrl') || "/api";
 
   // Validate API key
   if (!apiKey) {
